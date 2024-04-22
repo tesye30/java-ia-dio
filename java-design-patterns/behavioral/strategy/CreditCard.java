@@ -1,4 +1,4 @@
-package com.java-design-patterns.behavioral.strategy;
+package java-design-patterns.behavioral.strategy;
 
 public class CreditCard {
 
