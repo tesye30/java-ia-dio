@@ -1,0 +1,38 @@
+package br.com.dio.desafio.dominio;
+
+import java.time.LocalDate;
+
+public class Mentoria extends Conteudo{
+
+    private LocalDate data;
+
+     /* Construtor que inicializa todos os campos, incluindo os herdados de Conteudo */
+     public Mentoria(String titulo, String descricao) {
+        super();
+     }
+
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO + 20d;
+    }
+
+    public Mentoria() {
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "Mentoria{" +
+                "titulo='" + getTitulo() + '\'' +
+                ", descricao='" + getDescricao() + '\'' +
+                ", data=" + data +
+                '}';
+    }
+}
